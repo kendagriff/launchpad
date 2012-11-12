@@ -7,5 +7,7 @@ class CreateLaunchpadGoogleAuthUsers < ActiveRecord::Migration
       t.string :identifier_url
       t.timestamps
     end
+
+    add_index :launchpad_google_auth_users, :identifier_url
   end
 end
