@@ -7,11 +7,11 @@ require "launchpad/version"
 Gem::Specification.new do |s|
   s.name        = "launchpad"
   s.version     = Launchpad::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Launchpad."
-  s.description = "TODO: Description of Launchpad."
+  s.authors     = ["Kendall Buchanan"]
+  s.email       = ["kendall@teachbanzai.com"]
+  s.homepage    = "http://teachbanzai.com"
+  s.summary     = "Single Sign-on For Banzai's Internal Apps"
+  s.description = "Single Sign-on for Banzai's internal apps via Google OpenID and OmniAuth."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
