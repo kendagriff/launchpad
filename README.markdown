@@ -43,3 +43,22 @@ class ExampleController < ApplicationController
   before_filter :require_launchpad_authentication
 end
 ```
+
+## Integration Testing
+
+Include the `Launchpad::Test` module in your `test_helper.rb`:
+
+```
+class ActiveSupport::TestCase
+  include Launchpad::Test
+  ...
+end
+```
+
+Call the `login_integration` method within your tests
+
+```
+test "testing this" do
+  login_integration
+end
+```
