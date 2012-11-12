@@ -8,7 +8,7 @@ module Launchpad
       @current_user ||= GoogleAuthUserRepository.find(session[:user_id])
     end
 
-    def require_authentication
+    def require_launchpad_authentication
       unless signed_in?
         session[:redirect_to] = request.fullpath
         redirect_to launchpad.new_session_url
