@@ -10,7 +10,14 @@ Single Sign-on for Banzai's internal apps, using Google's OpenID and OmniAuth.
 gem 'launchpad', git: 'git@github.com:kendagriff/launchpad.git'
 ```
 
-### 2. Mount engine routes in `config/routes.rb`
+### 2. Install Migrations
+
+```
+rake launchpad:install:migrations
+rake db:migrate
+```
+
+### 3. Mount engine routes in `config/routes.rb`
 
 ```
 Sponsors::Application.routes.draw do
@@ -18,7 +25,7 @@ Sponsors::Application.routes.draw do
 end
 ```
 
-### 3. Include helpers and filters in ApplicationController
+### 4. Include helpers and filters in ApplicationController
 
 ```
 class ApplicationController < ActionController::Base
@@ -26,5 +33,13 @@ class ApplicationController < ActionController::Base
   helper Launchpad::AuthenticationHelper
 
   protect_from_forgery
+end
+```
+
+### 5. Call authentication filter in controllers
+
+```
+class ExampleController < ApplicationController
+  before_filter :require_launchpad_authentication
 end
 ```
