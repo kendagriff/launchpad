@@ -22,4 +22,6 @@ ActiveRecord::Schema.define(:version => 20121110211932) do
     t.datetime "updated_at",     :null => false
   end
 
+  add_index "launchpad_google_auth_users", ["identifier_url"], :name => "index_launchpad_google_auth_users_on_identifier_url"
+
 end
