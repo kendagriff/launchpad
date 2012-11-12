@@ -1,4 +1,5 @@
 require 'omniauth-google-apps'
+require 'launchpad/test_case'
 
 module Launchpad
   class Engine < ::Rails::Engine
