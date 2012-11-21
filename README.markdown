@@ -46,7 +46,11 @@ end
 
 ## Functional Testing
 
-Merely set `@request.session[:user_id]`.
+Merely set `@request.session[:user_id]` to a non-`nil` value.
+
+```
+@request.session[:user_id] = 1
+```
 
 ## Integration Testing
 
