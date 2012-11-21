@@ -44,6 +44,10 @@ class ExampleController < ApplicationController
 end
 ```
 
+## Functional Testing
+
+Merely set `@request.session[:user_id]`.
+
 ## Integration Testing
 
 Include the `Launchpad::Test` module in your `test_helper.rb`:
