@@ -48,10 +48,22 @@ end
 
 ### 6. Header View
 
+Include the CSS files:
+
+```
+<head>
+  <%= stylesheet_link_tag 'launchpad/application' %>
+</head>
+```
+
+Embed the header and surrounding view:
+
 ```
 <body>
   <%= launchpad_header_tag %>
-  <%= yield %>
+  <%= launchpad_surround_tag %>
+    <%= yield %>
+  <% end %>
 </body>
 ```
 

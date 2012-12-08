@@ -1,13 +1,114 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  background: url('bg.jpg') repeat 0 0;
+}
+
+#launchpad {
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Grande';
+  font-size: 10px;
+  padding: 6px;
+}
+
+#launchpad h1 {
+  display: inline-block;
+  float: left;
+  margin: 0px 20px 0px 15px;
+  padding: 0px;
+  font-size: 10px;
+  color: #999;
+}
+
+#launchpad ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#launchpad li {
+  float: left;
+  margin-right: 20px;
+}
+
+#launchpad li:last-child {
+  float: none;
+}
+
+#launchpad a {
+  color: #999;
+  text-decoration: none;
+}
+
+#launchpad a:hover {
+  color: white;
+}
+
+.launchpad-surround {
+  position: relative;
+  margin: 0px 20px;
+}
+
+.launchpad-surround .top-left {
+  background: url('top-left.png') no-repeat 0 0;
+  width: 24px;
+  height: 56px;
+  float: left;
+}
+
+.launchpad-surround .top-middle {
+  background: url('top.png') repeat-x 0 0;
+  height: 56px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.launchpad-surround .top-right {
+  background: url('top-right.png') no-repeat 0 0;
+  width: 24px;
+  height: 56px;
+  float: right;
+  margin-right: 1px;
+  margin-top: -56px;
+}
+
+.launchpad-surround .left {
+  background: url('left.png') repeat-y 0 0;
+}
+
+.launchpad-surround .right {
+  background: url('right.png') repeat-y right 0;
+  margin-right: 0px;
+}
+
+.launchpad-surround .bottom-left {
+  background: url('bottom-left.png') no-repeat 0 0;
+  width: 24px;
+  height: 56px;
+  float: left;
+}
+
+.launchpad-surround .bottom-middle {
+  background: url('bottom.png') repeat-x 0 0;
+  height: 56px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.launchpad-surround .bottom-right {
+  float: right;
+  margin-top: -56px;
+}
+
+.launchpad-surround .bottom-right {
+  background: url('bottom-right.png') no-repeat right 0;
+  width: 24px;
+  height: 56px;
+}
+
+.launchpad-surround .content {
+  background-color: white;
+  margin: 0px 6px;
+  padding: 0px 20px;
+}

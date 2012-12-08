@@ -2,14 +2,14 @@
 <html>
 <head>
   <title>Dummy</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag "application", 'launchpad/application' %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-<%= launchpad_header_tag %>
-
-<%= yield %>
-
+  <%= launchpad_header_tag %>
+  <%= launchpad_surround_tag do %>
+    <%= yield %>
+  <% end %>
 </body>
 </html>
