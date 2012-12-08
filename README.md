@@ -29,7 +29,9 @@ end
 
 ```
 class ApplicationController < ActionController::Base
-  include Launchpad::AuthenticationHelper
+  include Launchpad::ApplicationHelper     # template helpers
+  include Launchpad::AuthenticationHelper  # authentication helpers
+  helper Launchpad::ApplicationHelper
   helper Launchpad::AuthenticationHelper
 
   protect_from_forgery
@@ -42,6 +44,15 @@ end
 class ExampleController < ApplicationController
   before_filter :require_launchpad_authentication
 end
+```
+
+### 6. Header View
+
+```
+<body>
+  <%= launchpad_header_tag %>
+  <%= yield %>
+</body>
 ```
 
 ## Integration Testing
