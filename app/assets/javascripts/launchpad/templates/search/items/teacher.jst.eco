@@ -1,0 +1,2 @@
+<div><%= @first_name %> <%= @last_name %> <span class="item-type">Teacher</span></div>
+<div><span class="username"><%= @username %></span></div>

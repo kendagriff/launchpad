@@ -1,7 +1,44 @@
+/*= require ./jquery.ui.autocomplete */
+
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("opensans-italic-webfont.eot");
+  src: url("opensans-italic-webfont.eot?#iefix") format("embedded-opentype"),
+       url("opensans-italic-webfont.woff") format("woff"),
+       url("opensans-italic-webfont.ttf") format("truetype"),
+       url("opensans-italic-webfont.svg#OpenSansItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("opensans-regular-webfont.eot");
+  src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
+       url("opensans-regular-webfont.woff") format("woff"),
+       url("opensans-regular-webfont.ttf") format("truetype"),
+       url("opensans-regular-webfont.svg#OpenSansRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSansSemibold";
+  src: url("opensans-semibold-webfont.eot");
+  src: url("opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"),
+       url("opensans-semibold-webfont.woff") format("woff"),
+       url("opensans-semibold-webfont.ttf") format("truetype"),
+       url("opensans-semibold-webfont.svg#OpenSansSemibold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0px;
   padding: 0px;
   background: url('bg.jpg') repeat 0 0;
+  font-weight: normal;
+  font-family: 'OpenSansRegular';
 }
 
 #launchpad {
@@ -48,6 +85,32 @@ html, body {
 .launchpad-surround {
   position: relative;
   margin: 0px 20px;
+}
+
+.launchpad-surround .search {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: -13px;
+  position: relative;
+}
+
+.launchpad-surround .search .bar {
+  position: absolute;
+  width: 278px;
+  height: 42px;
+  background: url('search.png') no-repeat 0 0;
+  right: 60px;
+  top: 5px;
+}
+
+.launchpad-surround .search .bar input[type="text"] {
+  border: none;
+  font-size: 14px;
+  outline: none;
+  margin-top: 11px;
+  margin-left: 45px;
+  width: 220px;
+  background-color: #FAFAFA;
 }
 
 .launchpad-surround .top-left {

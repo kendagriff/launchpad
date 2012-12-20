@@ -7,7 +7,7 @@ Single Sign-on for Banzai's internal apps, using Google's OpenID and OmniAuth.
 ### 1. Add to Gemfile
 
 ```
-gem 'launchpad', git: 'git@github.com:kendagriff/launchpad.git'
+gem 'launchpad', git: 'git://github.com/kendagriff/launchpad.git'
 ```
 
 ### 2. Install Migrations
@@ -65,6 +65,16 @@ Embed the header and surrounding view:
     <%= yield %>
   <% end %>
 </body>
+```
+
+## Basic Authentication (for APIs)
+
+Add the following filter to your controller
+
+```
+class MyController < ApplicationController
+  before_filter :require_basic_authentication
+end
 ```
 
 ## Functional Testing
