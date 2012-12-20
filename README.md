@@ -53,6 +53,7 @@ Include the CSS files:
 ```
 <head>
   <%= stylesheet_link_tag 'launchpad/application' %>
+  <%= javascript_include_tag 'launchpad/application' %>
 </head>
 ```
 
@@ -102,4 +103,12 @@ Call the `login_integration` method within your tests
 test "testing this" do
   login_integration
 end
+```
+
+## WebMock
+
+Webmock can get in Google's way, so add this to `config/initializers/webmock.rb`:
+
+```
+WebMock.disable!
 ```
