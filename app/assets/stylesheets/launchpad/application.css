@@ -171,7 +171,9 @@ html, body {
 }
 
 .launchpad-surround .content {
+  position: relative;
   background-color: white;
   margin: 0px 6px;
   padding: 0px 20px;
+  overflow: auto;
 }

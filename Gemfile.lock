@@ -8,6 +8,7 @@ PATH
   remote: .
   specs:
     launchpad (0.0.2)
+      eco
       omniauth-google-apps
       rails (~> 3.2.8)
 
@@ -149,7 +150,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails
   dock!
-  eco
   jquery-rails
   launchpad!
   machinist (>= 2.0.0.beta2)
