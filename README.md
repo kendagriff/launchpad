@@ -110,5 +110,5 @@ end
 Webmock can get in Google's way, so add this to `config/initializers/webmock.rb`:
 
 ```
-WebMock.disable!
+WebMock.disable_net_connect! allow_localhost: true if %w(test development).include?(Rails.env)
 ```

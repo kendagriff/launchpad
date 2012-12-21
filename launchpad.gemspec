@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Single Sign-on For Banzai's Internal Apps"
   s.description = "Single Sign-on for Banzai's internal apps via Google OpenID and OmniAuth."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md", "Gemfile", "Gemfile.lock"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.2.8"
