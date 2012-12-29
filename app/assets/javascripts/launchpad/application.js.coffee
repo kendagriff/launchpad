@@ -1,6 +1,6 @@
 #= require jquery
 #= require jquery_ujs
-#= require ./jquery.ui.autocomplete
+#= require ./jquery-ui
 #= require ./jquery.ui.autocomplete.html.js
 #= require_self
 #= require_tree ./templates
