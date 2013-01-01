@@ -3,7 +3,7 @@ Launchpad.Search ||= {}
 class Launchpad.Search.SearchBar
   constructor: ->
     $('[data-behavior=search]').autocomplete
-      minLength: 3
+      delay: 0
       html: true
       focus: (event, ui) -> false
       select: (event, ui) ->
@@ -25,20 +25,18 @@ class Launchpad.Search.SearchBar
 
 Launchpad.Search.Items ||= {}
 
-class Launchpad.Search.Items.Teacher
+class Launchpad.Search.Items.Item
+  constructor: (item) ->
+    @item = item
+
+  render: ->
+    @template(@item)
+
+class Launchpad.Search.Items.Teacher extends Launchpad.Search.Items.Item
   template: JST['launchpad/templates/search/items/teacher']
 
-  constructor: (item) ->
-    @item = item
-
-  render: ->
-    @template(@item)
-
-class Launchpad.Search.Items.Student
+class Launchpad.Search.Items.Student extends Launchpad.Search.Items.Item
   template: JST['launchpad/templates/search/items/student']
 
-  constructor: (item) ->
-    @item = item
-
-  render: ->
-    @template(@item)
+class Launchpad.Search.Items.Sponsor extends Launchpad.Search.Items.Item
+  template: JST['launchpad/templates/search/items/sponsor']

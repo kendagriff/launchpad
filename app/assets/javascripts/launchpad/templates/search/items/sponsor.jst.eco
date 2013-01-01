@@ -1,0 +1,2 @@
+<div><%= @organization %> <span class="item-type">Sponsor</span></div>
+<div><span class="username"><%= @username %></span></div>
