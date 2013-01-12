@@ -9,7 +9,7 @@ module Launchpad
     end
 
     def require_launchpad_authentication
-      unless signed_in?
+      unless signed_in? || Rails.env.development? # Remove to test in development
         session[:redirect_to] = request.fullpath
         redirect_to launchpad.new_session_url
       end
