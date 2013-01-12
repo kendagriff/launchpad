@@ -3,10 +3,12 @@ module Launchpad
     include AuthenticationHelper
 
     def redirect_to_stored
-      if signed_in?
-        redirect_to main_app.root_url
-      else
-        redirect_to '/launchpad/auth/google_apps'
+      unless Rails.env.development?
+        if signed_in?
+          redirect_to main_app.root_url
+        else
+          redirect_to '/launchpad/auth/google_apps'
+        end
       end
     end
   end
