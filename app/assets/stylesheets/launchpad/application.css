@@ -101,6 +101,16 @@ html, body {
   border-bottom: 1px solid #ddd;
 }
 
+.launchpad-surround ul.details li {
+  margin-bottom: 8px;
+}
+
+.launchpad-surround ul.details label {
+  font-family: 'OpenSansItalic';
+  width: 100px;
+  display: inline-block;
+}
+
 .launchpad-surround .search {
   height: 40px;
   margin-top: 10px;
