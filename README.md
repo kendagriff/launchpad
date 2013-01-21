@@ -62,7 +62,7 @@ Embed the header and surrounding view:
 ```
 <body>
   <%= launchpad_header_tag %>
-  <%= launchpad_surround_tag %>
+  <%= launchpad_surround_tag do %>
     <%= yield %>
   <% end %>
 </body>
@@ -88,11 +88,11 @@ Merely set `@request.session[:user_id]` to a non-`nil` value.
 
 ## Integration Testing
 
-Include the `Launchpad::Test` module in your `test_helper.rb`:
+Include the `Launchpad::TestCase` module in your `test_helper.rb`:
 
 ```
 class ActiveSupport::TestCase
-  include Launchpad::Test
+  include Launchpad::TestCase
   ...
 end
 ```
