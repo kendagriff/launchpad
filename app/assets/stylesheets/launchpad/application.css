@@ -94,6 +94,13 @@ html, body {
   padding-bottom: 12px;
 }
 
+.launchpad-surround h2 {
+  margin-top: 35px;
+  font-size: 1.2em;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
 .launchpad-surround .search {
   height: 40px;
   margin-top: 10px;
