@@ -87,6 +87,13 @@ html, body {
   margin: 0px 20px;
 }
 
+.launchpad-surround h1 {
+  border-bottom: 1px solid #ddd;
+  margin-top: 15px;
+  font-size: 1.7em;
+  padding-bottom: 12px;
+}
+
 .launchpad-surround .search {
   height: 40px;
   margin-top: 10px;
