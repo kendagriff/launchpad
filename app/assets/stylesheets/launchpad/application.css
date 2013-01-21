@@ -4,9 +4,9 @@
   font-family: "OpenSansItalic";
   src: url("opensans-italic-webfont.eot");
   src: url("opensans-italic-webfont.eot?#iefix") format("embedded-opentype"),
-       url("opensans-italic-webfont.woff") format("woff"),
-       url("opensans-italic-webfont.ttf") format("truetype"),
-       url("opensans-italic-webfont.svg#OpenSansItalic") format("svg");
+  url("opensans-italic-webfont.woff") format("woff"),
+  url("opensans-italic-webfont.ttf") format("truetype"),
+  url("opensans-italic-webfont.svg#OpenSansItalic") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,9 +15,9 @@
   font-family: "OpenSansRegular";
   src: url("opensans-regular-webfont.eot");
   src: url("opensans-regular-webfont.eot?#iefix") format("embedded-opentype"),
-       url("opensans-regular-webfont.woff") format("woff"),
-       url("opensans-regular-webfont.ttf") format("truetype"),
-       url("opensans-regular-webfont.svg#OpenSansRegular") format("svg");
+  url("opensans-regular-webfont.woff") format("woff"),
+  url("opensans-regular-webfont.ttf") format("truetype"),
+  url("opensans-regular-webfont.svg#OpenSansRegular") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,9 +26,9 @@
   font-family: "OpenSansSemibold";
   src: url("opensans-semibold-webfont.eot");
   src: url("opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"),
-       url("opensans-semibold-webfont.woff") format("woff"),
-       url("opensans-semibold-webfont.ttf") format("truetype"),
-       url("opensans-semibold-webfont.svg#OpenSansSemibold") format("svg");
+  url("opensans-semibold-webfont.woff") format("woff"),
+  url("opensans-semibold-webfont.ttf") format("truetype"),
+  url("opensans-semibold-webfont.svg#OpenSansSemibold") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -99,6 +99,12 @@ html, body {
   font-size: 1.2em;
   padding-bottom: 12px;
   border-bottom: 1px solid #ddd;
+}
+
+.launchpad-surround ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .launchpad-surround ul.details li {
