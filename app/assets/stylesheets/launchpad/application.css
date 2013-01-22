@@ -222,17 +222,17 @@ html, body {
   border-radius: 5px;
 }
 
-.user-workflow-state .active {
+.user-workflow-state.active {
   background-color: green;
   color: white;
 }
 
-.user-workflow-state .converting {
+.user-workflow-state.converting {
   background-color: orange;
   color: white;
 }
 
-.user-workflow-state .unconverted {
+.user-workflow-state.unconverted {
   background-color: #FF3300;
   color: white;
 }
