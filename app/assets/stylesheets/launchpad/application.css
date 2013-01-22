@@ -212,3 +212,27 @@ html, body {
   display: block;
   margin: 0px auto 30px auto;
 }
+
+.user-workflow-state {
+  font-size: .6em;
+  line-height: 1em;
+  vertical-align: middle;
+  margin-left: 15px;
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
+.user-workflow-state .active {
+  background-color: green;
+  color: white;
+}
+
+.user-workflow-state .converting {
+  background-color: orange;
+  color: white;
+}
+
+.user-workflow-state .unconverted {
+  background-color: #FF3300;
+  color: white;
+}
