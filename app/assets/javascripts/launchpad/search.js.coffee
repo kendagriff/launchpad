@@ -40,3 +40,6 @@ class Launchpad.Search.Items.Student extends Launchpad.Search.Items.Item
 
 class Launchpad.Search.Items.Sponsor extends Launchpad.Search.Items.Item
   template: JST['launchpad/templates/search/items/sponsor']
+
+class Launchpad.Search.Items.School extends Launchpad.Search.Items.Item
+  template: JST['launchpad/templates/search/items/school']
