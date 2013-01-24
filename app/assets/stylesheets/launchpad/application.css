@@ -235,3 +235,19 @@ html, body {
   background-color: #FF3300;
   color: white;
 }
+
+.errors {
+  .alert {
+    span {
+      background-color: brown;
+      color: white;
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+  }
+
+  .field_with_errors {
+    display: inline-block;
+    border: 2px solid brown;
+  }
+}
