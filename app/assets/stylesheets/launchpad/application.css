@@ -55,6 +55,8 @@ html, body {
   padding: 0px;
   font-size: 10px;
   color: #999;
+  font-weight: normal;
+  font-family: 'OpenSansSemibold';
 }
 
 #launchpad ul {
