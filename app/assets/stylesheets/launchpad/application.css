@@ -214,6 +214,27 @@ html, body {
   margin: 0px auto 30px auto;
 }
 
+.launchpad-menu ul {
+  list-style: none;
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  z-index: 1000;
+  font-size: 1em;
+  overflow: auto;
+}
+
+.launchpad-menu ul li {
+  float: left;
+  margin-right: 20px;
+}
+
+.launchpad-menu ul li a {
+  color: #a9a9a9;
+  text-shadow: 1px 1px 1px white;
+  text-decoration: none;
+}
+
 .user-workflow-state {
   font-size: .6em;
   line-height: 1em;

@@ -8,6 +8,10 @@
 </head>
 <body>
   <%= launchpad_header_tag %>
+  <%= launchpad_menu_tag do %>
+    <%= launchpad_menu_item_tag "Sponsors", "http://google.com" %>
+    <%= launchpad_menu_item_tag "Support", "http://google.com" %>
+  <% end %>
   <%= launchpad_surround_tag do %>
     <h1>Welcome!</h1>
     <%= yield %>

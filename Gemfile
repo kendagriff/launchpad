@@ -7,7 +7,6 @@ gemspec
 
 # jquery-rails is used by the dummy application
 gem 'jquery-rails'
-gem 'psych'
 
 group :assets do
   gem 'coffee-rails'
