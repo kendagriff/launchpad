@@ -225,7 +225,7 @@ html, body {
 }
 
 .launchpad-menu ul li {
-  float: left;
+  display: inline-block;
   margin-right: 20px;
 }
 
