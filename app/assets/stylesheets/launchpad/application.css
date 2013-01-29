@@ -235,6 +235,10 @@ html, body {
   text-decoration: none;
 }
 
+.launchpad-menu ul li a:hover {
+  text-decoration: underline;
+}
+
 .user-workflow-state {
   font-size: .6em;
   line-height: 1em;
