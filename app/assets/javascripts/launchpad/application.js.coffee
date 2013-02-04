@@ -11,3 +11,4 @@ window.Launchpad = {}
 $(document).ready ->
   search = new Launchpad.Search.SearchBar()
   $('[data-behavior=search]').select()
+  $('[data-behavior=date-picker]').datepicker()
