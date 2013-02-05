@@ -273,3 +273,7 @@ html, body {
   display: inline-block;
   border: 2px solid brown;
 }
+
+.none {
+  font-family: 'OpenSansItalic';
+}
