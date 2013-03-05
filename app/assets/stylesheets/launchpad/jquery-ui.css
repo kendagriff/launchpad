@@ -118,6 +118,11 @@
   text-decoration: underline;
 }
 
+.ui-menu .ui-menu-item .description {
+  font-size: .7em;
+  color: silver;
+}
+
 .ui-menu .ui-menu-divider {
   margin: 5px -2px 5px -2px;
   height: 0;

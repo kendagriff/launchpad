@@ -1,1 +1,2 @@
 <div><%= @organization %> <span class="item-type">School</span></div>
+<div class="description"><%= @description %></div>
