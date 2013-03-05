@@ -5,6 +5,7 @@ class Launchpad.Search.SearchBar
     $('[data-behavior=search]').autocomplete
       delay: 0
       html: true
+      autoFocus: true
       focus: (event, ui) -> false
       select: (event, ui) ->
         document.location = ui.item.link
