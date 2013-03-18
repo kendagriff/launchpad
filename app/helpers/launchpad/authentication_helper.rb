@@ -5,7 +5,7 @@ module Launchpad
     end
 
     def current_user
-      @current_user ||= GoogleAuthUserRepository.find(session[:user_id]) || NullUser.new
+      @current_user ||= GoogleAuthUserRepository.find(session[:user_id])
     end
 
     def require_launchpad_authentication

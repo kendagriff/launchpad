@@ -11,7 +11,8 @@ module Launchpad
 
     def self.find_or_create(*args)
       auth = args.fetch(0)
-      GoogleAuthUserRepository.find(auth.fetch('uid')) || GoogleAuthUserRepository.create(auth)
+      user = GoogleAuthUserRepository.find(auth.fetch('uid'))
+      user.is_a?(NullUser) ? GoogleAuthUserRepository.create(auth) : user
     end
 
     def self.find(id)
@@ -19,7 +20,7 @@ module Launchpad
         GoogleAuthUser.find_by_id(id)
       else
         GoogleAuthUser.find_by_identifier_url(id)
-      end
+      end || NullUser.new
     end
   end
 end
