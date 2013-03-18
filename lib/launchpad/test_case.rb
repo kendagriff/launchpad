@@ -16,5 +16,14 @@ module Launchpad
     def login_integration
       get_via_redirect '/launchpad/auth/google_apps', { 'omniauth.auth' => OmniAuth.config.mock_auth[:google_apps] }
     end
+
+    def login_functional
+      user = GoogleAuthUser.create(
+        email: "test@teachbanzai.com",
+        first_name: "Demo",
+        last_name: "User",
+      )
+      @request.session[:user_id] = user.id
+    end
   end
 end
