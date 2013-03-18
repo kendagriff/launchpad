@@ -11,7 +11,7 @@ class NavigationTest < ActionDispatch::IntegrationTest
   test "successfully authenticate" do
     login_integration
     get main_app.root_url
-    assert_match(/Kendall/, response.body)
+    assert_match(/My Name/, response.body)
   end
 end
 
