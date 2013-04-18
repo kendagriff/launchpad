@@ -16,8 +16,7 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md", "Gemfile", "Gemfile.lock"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 3.2.8"
-  s.add_dependency "omniauth-google-apps"
+  s.add_dependency "rails", "~> 3.2.11"
   s.add_dependency "eco"
 
   s.add_development_dependency "sqlite3"

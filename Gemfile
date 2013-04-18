@@ -28,3 +28,5 @@ gem 'pry'
 gem 'pry-nav'
 gem 'pry-remote'
 gem 'machinist', '>= 2.0.0.beta2', require: 'machinist/active_record'
+gem 'ruby-openid', git: "git://github.com/kendagriff/ruby-openid.git"
+gem 'omniauth-google-apps'
