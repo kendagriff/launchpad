@@ -8,6 +8,10 @@ gemspec
 # jquery-rails is used by the dummy application
 gem 'jquery-rails'
 
+# Use this temporarily until ruby-openid fixes the bug
+gem 'ruby-openid', git: "git://github.com/kendagriff/ruby-openid.git"
+gem 'omniauth-google-apps'
+
 group :assets do
   gem 'coffee-rails'
 end
@@ -28,5 +32,3 @@ gem 'pry'
 gem 'pry-nav'
 gem 'pry-remote'
 gem 'machinist', '>= 2.0.0.beta2', require: 'machinist/active_record'
-gem 'ruby-openid', git: "git://github.com/kendagriff/ruby-openid.git"
-gem 'omniauth-google-apps'
