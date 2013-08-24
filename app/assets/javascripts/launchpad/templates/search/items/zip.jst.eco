@@ -1,1 +1,1 @@
-<div><%= @description %></div>
+<div><%= @description %> <span class="item-type">ZIP</span></div>
