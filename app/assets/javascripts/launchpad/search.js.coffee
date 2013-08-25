@@ -50,3 +50,6 @@ class Launchpad.Search.Items.Zip extends Launchpad.Search.Items.Item
 
 class Launchpad.Search.Items.Klass extends Launchpad.Search.Items.Item
   template: JST['launchpad/templates/search/items/klass']
+
+class Launchpad.Search.Items.State extends Launchpad.Search.Items.Item
+  template: JST['launchpad/templates/search/items/state']
