@@ -1,2 +1,1 @@
-<div><%= @item_id %> <span class="item-type">State</span></div>
-<div class="description"><%= @description %></div>
+<div><%= @description %> <span class="item-type">State</span></div>
