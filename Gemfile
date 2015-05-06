@@ -10,7 +10,7 @@ gem 'jquery-rails'
 
 # Use this temporarily until ruby-openid fixes the bug
 gem 'ruby-openid', git: "git://github.com/kendagriff/ruby-openid.git"
-gem 'omniauth-google-apps'
+gem "omniauth-google-oauth2"
 
 group :assets do
   gem 'coffee-rails'
